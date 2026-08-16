@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navya Mathur — Portfolio</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1300px;
+    margin: 0 auto;
+    background: #ededed;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  /* ---------- Fixed side nav ---------- */
+  #nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -830px; /* 1300/2 + 180 */
+    width: 160px;
+    height: 100%;
+    padding-top: 40px;
+  }
+  #nav .navbox {
+    position: sticky;
+    top: 40px;
+    background: #111;
+    color: #fff;
+    padding: 22px 18px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #nav .name {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f2453d;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  #nav a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+  }
+  #nav a:hover { color: #f2453d; }
+  #nav .sep { height: 1px; background: #333; margin: 12px 0; }
+
+  /* ---------- Page canvas ---------- */
+  #canvas {
+    width: 1300px;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.15);
+  }
+
+  .page-img {
+    display: block;
+    width: 1300px;
+    height: auto;
+  }
+
+  section { position: relative; scroll-margin-top: 20px; }
+
+  .tag {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #f2453d;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 9px;
+    border-radius: 3px;
+    opacity: 0.88;
+  }
+
+  footer {
+    width: 1300px;
+    background: #111;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 0.5px;
+  }
+  footer a { color: #f2453d; text-decoration: none; }
+</style>
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="navbox">
+      <div class="name">Navya Mathur</div>
+      <a href="#intro">Read Me</a>
+      <a href="#contents">Contents</a>
+      <a href="#about">About Me</a>
+      <div class="sep"></div>
+      <a href="#planeform">Planeform 1</a>
+      <a href="#glyde">Glyde</a>
+      <a href="#nomad">Nomad Suede Series</a>
+      <div class="sep"></div>
+      <a href="#ecommerce">E-Commerce Case Study</a>
+      <a href="#flash">The Flash Concept</a>
+    </div>
+  </nav>
+
+  <div id="canvas">
+
+    <section id="intro">
+      <img class="page-img" src="images/page-01.jpg" alt="Read Me — how to view this portfolio">
+    </section>
+
+    <section id="contents">
+      <img class="page-img" src="images/page-02.jpg" alt="Contents">
+    </section>
+
+    <section id="about">
+      <img class="page-img" src="images/page-03.jpg" alt="About Me">
+    </section>
+
+    <section id="planeform">
+      <span class="tag">Project 01</span>
+      <img class="page-img" src="images/page-04.jpg" alt="Planeform 1 cover">
+      <img class="page-img" src="images/page-05.jpg" alt="Why this exists">
+      <img class="page-img" src="images/page-06.jpg" alt="Concept sketches, why Planeform 1">
+      <img class="page-img" src="images/page-07.jpg" alt="Target audience">
+      <img class="page-img" src="images/page-08.jpg" alt="Materials and components">
+    </section>
+
+    <section id="glyde">
+      <span class="tag">Project 02</span>
+      <img class="page-img" src="images/page-09.jpg" alt="Glyde cover">
+      <img class="page-img" src="images/page-10.jpg" alt="Glyde concept">
+      <img class="page-img" src="images/page-11.jpg" alt="Function follows form">
+      <img class="page-img" src="images/page-12.jpg" alt="Why Glyde">
+      <img class="page-img" src="images/page-13.jpg" alt="Construction and materials">
+    </section>
+
+    <section id="nomad">
+      <span class="tag">Work in Progress</span>
+      <img class="page-img" src="images/page-14.jpg" alt="The Nomad Suede Series">
+    </section>
+
+    <section id="ecommerce">
+      <span class="tag">Project 03</span>
+      <img class="page-img" src="images/page-15.jpg" alt="Case study on e-commerce">
+    </section>
+
+    <section id="flash">
+      <span class="tag">Concept Sneaker</span>
+      <img class="page-img" src="images/page-16.jpg" alt="The Flash concept sneaker">
+    </section>
+
+  </div>
+
+  <footer>
+    Navya Mathur — Footwear &amp; Product Design Portfolio · Built as a static site from the original PDF
+  </footer>
+
+</body>
+</html>
